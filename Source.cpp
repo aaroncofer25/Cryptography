@@ -2,6 +2,7 @@
 #include <numeric>
 #include <algorithm>
 #include <set>
+
 using namespace std;
 
 void factor(unsigned long long int n) {
@@ -17,20 +18,22 @@ void factor(unsigned long long int n) {
 			s.insert(d);
 			
 	}
-	for (int i = 0; i = s.size(); i++) {
-		cout << s.[i] << " , ";
-	}
+        for (int value : s) {
+                cout << value << " , ";
+        }
 }
 
 int main() {
-	unsigned long long int n = 1;
+        unsigned long long int n = 0;
 
-	while (n != 0) {
-		cout << "Input 0 to exit \n";
-		cout << "Input the number to b factored: ";
-		cin >> n;
-		factor(n);
-	}
-	cout << "Thanks for Playing \n";
-	return 0;
+        while (true) {
+                cout << "Input 0 to exit \n";
+                cout << "Input the number to b factored: ";
+                cin >> n;
+                if (n == 0)
+                        break;
+                factor(n);
+        }
+        cout << "Thanks for Playing \n";
+        return 0;
 }
