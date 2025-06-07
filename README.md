@@ -27,3 +27,17 @@ After compiling, run the executables directly. For example, to use `factor`:
 
 It will prompt for a number to factor and will display any factors found. Enter `0` to exit. Similarly, you can run `./factor1` after compiling `Source1.cpp`.
 
+
+## ML-KEM (Kyber) Test
+
+A small test is provided in `tests/test_mlkem.cpp` that verifies key generation,
+encapsulation, and decapsulation for the ML-KEM (Crystals-Kyber) algorithm via
+the `liboqs` library. Use the accompanying script to compile and run the test:
+
+```bash
+cd tests
+./test_mlkem.sh
+```
+
+The script requires `liboqs` and `pkg-config` to be installed. If these
+dependencies are missing, the test will fail to compile.
