@@ -18,8 +18,8 @@ void factor(unsigned long long int n) {
 			s.insert(d);
 			
 	}
-        for (int value : s) {
-                cout << value << " , ";
+        for (int val : s) {
+                cout << val << " , ";
         }
 }
 
